@@ -19,8 +19,11 @@
   },
   "devDependencies": {
     "ssb-caps": "^1.1.0",
+    "ssb-config": "^3.4.5",
+    "ssb-keys": "^8.0.0",
     "ssb-server": "^16.0.1",
-    "tape": "^5.0.1"
+    "tape": "^5.0.1",
+    "user-home": "^2.0.0"
   },
   "repository": {
     "type": "git",
