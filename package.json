@@ -1,0 +1,35 @@
+{
+  "name": "@nichoth/ssb-tags",
+  "version": "0.0.0",
+  "description": "A tag index for ssb",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "dependencies": {
+    "flumecodec": "0.0.1",
+    "flumeview-reduce": "^1.3.17",
+    "hashtag": "0.0.1",
+  },
+  "devDependencies": {
+    "ssb-server": "^16.0.1",
+    "tape": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/ssb-tags.git"
+  },
+  "keywords": [
+    "tags",
+    "tag",
+    "ssb",
+    "view",
+    "index"
+  ],
+  "author": "Nick Thomas <nichoth@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/ssb-tags/issues"
+  },
+  "homepage": "https://github.com/nichoth/ssb-tags#readme"
+}
