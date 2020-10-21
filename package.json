@@ -18,6 +18,7 @@
     "hashtag": "0.0.1"
   },
   "devDependencies": {
+    "rimraf": "^3.0.2",
     "ssb-caps": "^1.1.0",
     "ssb-config": "^3.4.5",
     "ssb-keys": "^8.0.0",

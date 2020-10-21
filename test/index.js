@@ -8,11 +8,15 @@ test('stuff', function (t) {
         type: 'post',
         text: 'Hello, world! #my-tag ok #tag-again'
     }, function (err, msg) {
-        // console.log('**post 2', err, msg)
+        console.log('key', msg.key)
         if (err) throw err
-        sbot.tags.get(function (err, data) {
-            console.log('**get**', err, data)
-            t.end()
+        sbot.tags.get(function (err, res) {
+            console.log('**get**', err, res)
+            t.ok(res['my-tag'])
+            t.ok(res['tag-again'], 'should have tags in view')
+            t.equal(res['my-tag'][0], msg.key,
+                'tags should reference the message')
+            sbot.close(() => t.end())
         })
     })
 })

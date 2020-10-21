@@ -4,6 +4,7 @@ var ssbConfigInject = require('ssb-config/inject')
 var home = require('user-home')
 var path = require('path')
 var ssbKeys = require('ssb-keys')
+var rimraf = require('rimraf')
 
 function start () {
     var appName = 'ssb-TEST-' + Math.random()
@@ -19,7 +20,7 @@ function start () {
     config.keys = ssbKeys.loadOrCreateSync(keyPath)
 
     var sbot = Sbot
-        .use(require('../')({ postType: 'post' }))
+        .use(require('../../')({ postType: 'post' }))
         .call(null, config)
 
     return sbot
