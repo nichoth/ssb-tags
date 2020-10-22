@@ -2,6 +2,12 @@
 
 A tag index for ssb
 
+## install
+
+```
+npm install @nichoth/ssb-tags
+```
+
 ## example
 ```js
 var test = require('tape')
