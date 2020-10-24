@@ -9,6 +9,22 @@ npm install @nichoth/ssb-tags
 ```
 
 ## example
+create-server
+```js
+function create () {
+    var Sbot = require('ssb-server')
+
+    // ...
+
+    var sbot = Sbot
+        .use(require('ssb-tags')({ postType: 'post' }))
+        .call(null, config)
+    return sbot
+}
+
+module.export = create
+```
+
 ```js
 var test = require('tape')
 var createSbot = require('./create-server')
