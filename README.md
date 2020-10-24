@@ -25,6 +25,7 @@ function create () {
 module.export = create
 ```
 
+test/index.js
 ```js
 var test = require('tape')
 var createSbot = require('./create-server')
