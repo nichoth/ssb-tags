@@ -17,7 +17,7 @@ function create () {
     // ...
 
     var sbot = Sbot
-        .use(require('ssb-tags')({ postType: 'post' }))
+        .use(require('@nichoth/ssb-tags')({ postType: 'post' }))
         .call(null, config)
     return sbot
 }
