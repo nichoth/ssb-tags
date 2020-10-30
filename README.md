@@ -1,9 +1,7 @@
 # ssb tags
-
 A tag index for ssb
 
 ## install
-
 ```
 npm install @nichoth/ssb-tags
 ```
