@@ -27,7 +27,7 @@ function createTagsView ({ postType }) {
                 acc[tag] = acc[tag] || []
                 acc[tag].push(key)
             })
-            console.log('in reducer', tags)
+            // console.log('in reducer', tags)
             return acc
         }
         function mapper (msg) {
